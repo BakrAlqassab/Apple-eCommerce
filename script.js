@@ -24,7 +24,7 @@ const slideshow = () => {
       divs[0].classList.add("change");
       a = 1;
     }
-  }, 20000);
+  }, 15000);
 };
 slideshow();
 //End of Slideshow
