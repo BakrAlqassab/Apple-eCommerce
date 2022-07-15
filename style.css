@@ -33,7 +33,7 @@ html {
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
   position: relative;
 }
