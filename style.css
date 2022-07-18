@@ -81,7 +81,7 @@ html {
   width: 30rem;
   height: 55rem;
   transform-style: preserve-3d;
-  transform: rotateY(91deg);
+  /*   transform: rotateY(91deg); */
   position: relative;
   top: -2rem;
 }
