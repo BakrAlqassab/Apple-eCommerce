@@ -70,6 +70,19 @@ html {
   transform: scale(1.5);
 }
 /* End of Navbar*/
+
+/* Cube */
+.cube {
+  width: 30rem;
+  height: 55rem;
+  background-color: red;
+}
+
+.cube-wrapper {
+}
+
+/* End of cube */
+
 /* Banner */
 .section-1-banner {
   flex-direction: column;
