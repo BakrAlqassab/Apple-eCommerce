@@ -80,7 +80,6 @@ html {
 .cube {
   width: 30rem;
   height: 55rem;
-  background-color: red;
   transform-style: preserve-3d;
   transform: rotateY(91deg);
 }
@@ -94,6 +93,7 @@ html {
   /*   transform: translateZ(5rem); */
   position: absolute;
   transform-style: preserve-3d;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
 .front-side {
@@ -108,6 +108,8 @@ html {
   height: 10rem;
   background-color: #fee;
   position: absolute;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
+
 }
 
 .front-side::before {
@@ -133,28 +135,54 @@ html {
   transform: translateZ(-5rem);
 }
 
-.back-side::before {
+.back-side::before,
+.back-side::after {
   content: "IPhone";
   width: 10rem;
   height: 100%;
   background-color: #fee;
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotateY(-90deg);
-  transform-origin: left;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  font-weight: 300;
+  color: #ec1919;
+  box-shadow: inset 0.1rem 0.1rem 0.1rem #ddd, inset -0.1rem -0.1rem 0.1rem #ddd;
 }
 
+.back-side:before {
+  top: 0;
+  left: 0;
+  transform: rotateY(-90deg);
+  transform-origin: left;
+}
+
+.back-side:after {
+  top: 0;
+  right: 0;
+  transform: rotateY(90deg);
+  transform-origin: right;
+}
 .back-side i {
   font-size: 12rem;
   color: var(--primary-color);
   text-shadow: 0.1rem 0.1rem 0.2rem #aaa, -0.1rem -0.1rem 0.2rem #aaa;
   transform: rotateY(180deg);
 }
+
+
+/* Controls */
+.controls{ 
+    position: absolute;
+bottom: -15rem;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+
+/* End of controls */
 
 /* End of cube */
 
