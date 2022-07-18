@@ -72,13 +72,41 @@ html {
 /* End of Navbar*/
 
 /* Cube */
+
+.cube-wrapper {
+  perspective: 100rem;
+}
+
 .cube {
   width: 30rem;
   height: 55rem;
   background-color: red;
+  transform-style: preserve-3d;
+  transform: rotateY(70deg);
 }
 
-.cube-wrapper {
+.front-side,
+.back-side {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  background-color: #fee;
+  transform: translateZ(5rem);
+  position: absolute;
+}
+
+.front-side {
+  padding: 2.5rem;
+  transform: translateZ(5rem);
+}
+.front-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.back-side {
+ transform: translateZ(-5rem);
 }
 
 /* End of cube */
