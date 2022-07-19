@@ -444,3 +444,55 @@ on 2 Images */
 }
 /* End of section 2 Buttons*/
 /* End of section 2 */
+
+/* Section 3 */
+.section-3 {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-color);
+  flex-direction: column;
+  padding: 15rem 0;
+}
+
+/* section 3 Heading */
+.section-3-heading {
+  font-size: 10rem;
+  font-weight: 200;
+  color: var(--primary-color);
+  margin-bottom: 15rem;
+}
+/* End of section 3 Heading*/
+
+/* Section 3 Content */
+.section-3-content {
+  width: 80%;
+  flex-direction: column;
+  perspective: 1000rem;
+}
+/* End of section 3 Content*/
+
+/* Section 3 Images */
+.section-3-content img {
+  width: inherit;
+}
+/* End of section 3 Images*/
+
+/* Section 3 Loading */
+.loading-wrapper {
+  position: absolute;
+  width: 60%;
+  height: 85%;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(images/MacBook/macbook-1-desktop.png) center no-repeat;
+}
+/* End of Section 3 Loading */
+
+/* Section 3 Info */
+.macbook-info {
+    position: absolute;
+}
+/* End of Section 3 Info */
+/* End of section 3 */
