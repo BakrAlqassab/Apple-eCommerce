@@ -76,3 +76,16 @@ const slideshow = () => {
 };
 slideshow();
 //End of Slideshow
+
+//Section 3
+const Section3Content = document.querySelector(".section-3-content");
+
+window.addEventListener("scroll", () => {
+  if (
+    window.pageYOffset + window.innerHeight >=
+    Section3Content.offsetTop + Section3Content.offsetHeight / 2
+  ) {
+    Section3Content.classList.add("change");
+  }
+});
+//End of section 3
