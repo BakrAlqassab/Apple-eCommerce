@@ -81,7 +81,7 @@ html {
   width: 30rem;
   height: 55rem;
   transform-style: preserve-3d;
-     transform: rotateX(0) rotateZ0();
+  transform: rotateX(0) rotateZ0();
   position: relative;
   top: -2rem;
   transition: transform 0.5s;
@@ -333,3 +333,76 @@ html {
 }
 /* End of slideshow */
 /* End of section 1 */
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 120vh;
+
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Section 2 Heading */
+.section-2-heading {
+  font-size: 10rem;
+  font-weight: 200;
+  color: var(--black-color);
+}
+/* End of section 2 Heading */
+/* Sction 2 images */
+.iphones {
+  height: 60vh;
+  width: 50vw;
+}
+
+.iphones img {
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
+  position: absolute;
+}
+/* End of section 2 Images */
+
+/* Section 2 buttons */
+.iphone-btns {
+  display: flex;
+}
+
+.iphone-btn {
+  width: 6rem;
+  height: 6rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(51, 51, 51) 60%,
+    rgb(82, 82, 82)
+  );
+  margin: 0 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.iphone-btn::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  display: block;
+  border: 0.1rem solid #6edae6;
+  border-radius: 1rem;
+}
+.iphone-btn span {
+  position: absolute;
+
+  top: -3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+  width: max-content;
+}
+/* End of section 2 Buttons*/
+/* End of section 2 */
