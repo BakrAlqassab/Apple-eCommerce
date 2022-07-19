@@ -396,8 +396,7 @@ html {
 .iphones:hover .iphone-img-2 {
   opacity: 1;
 }
-/* End of secti
-on 2 Images */
+/* End of section 2 Images */
 
 /* Section 2 buttons */
 .iphone-btns {
@@ -427,7 +426,6 @@ on 2 Images */
 }
 .iphone-btn span {
   position: absolute;
-
   top: -3rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -452,6 +450,7 @@ on 2 Images */
   background-color: var(--black-color);
   flex-direction: column;
   padding: 15rem 0;
+  clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
 }
 
 /* section 3 Heading */
