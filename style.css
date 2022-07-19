@@ -477,13 +477,13 @@ on 2 Images */
 }
 
 .macbook-img-1 {
-    transform: rotateX(-80deg);
-    transform-origin: bottom;
+  transform: rotateX(-80deg);
+  transform-origin: bottom;
 }
 
 .change .macbook-img-1 {
-    transform: rotateX(0);
-    transition: transform 3s;
+  transform: rotateX(0);
+  transition: transform 3s;
 }
 /* End of section 3 Images*/
 
@@ -498,12 +498,12 @@ on 2 Images */
       rgba(255, 255, 255, 0.6)
     ),
     url(images/MacBook/macbook-1-desktop.png) center no-repeat;
-    opacity: 0;
+  opacity: 0;
 }
 
 .change .loading-wrapper {
-    opacity: 1;
-    transition: opacity 1s 2s;
+  opacity: 1;
+  transition: opacity 1s 2s;
 }
 
 .loading {
@@ -515,6 +515,11 @@ on 2 Images */
   left: 0;
   background-color: var(--black-color);
   flex-direction: column;
+}
+
+.change .loading {
+  opacity: 0;
+  transition: 1s 5s;
 }
 
 .loading i {
@@ -542,8 +547,8 @@ on 2 Images */
 }
 
 .change .progress-bar::after {
-    width: 100%;
-    transition: width  1s 3s;
+  width: 100%;
+  transition: width 1s 3s;
 }
 /* End of Section 3 Loading */
 
@@ -553,6 +558,11 @@ on 2 Images */
   width: 70rem;
   text-align: center;
   opacity: 0;
+}
+
+.change .macbook-info {
+  opacity: 1;
+  transition: opacity 1.5s 6s;
 }
 
 .macbook-info-heading {
